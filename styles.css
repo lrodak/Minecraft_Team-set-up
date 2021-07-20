@@ -1,13 +1,58 @@
 body
 {
     background-color: rebeccapurple;
+    display: grid;
 }
 
 .page
 {
     background-color: aqua;
     font-size: larger;
-    height: 100px;
-    width: 100%;
+    height: 90%;
+    width: 90%;
+    min-height: 800px;
+    min-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
 }
 
+.players
+{
+    background-color: rgb(73, 73, 85);
+    height: 95%;
+    width: 32%;
+    float:left;
+    margin-left: 1%;
+    margin-top: 1%;  
+}
+
+.random
+{
+    background-color: blue;
+    height: 95%;
+    width: 32%;
+    margin-left: 1%;
+    float:left;
+    margin-top: 1%;
+}
+
+.roles
+{
+    background-color: green;
+    height: 95%;
+    width: 32%;
+    float:left;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#playerInputHead
+{
+    background-color: darkkhaki;
+    font-size: larger;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-family: monospace;
+
+}
