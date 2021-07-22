@@ -69,20 +69,27 @@ body
     background-color: green;
 }
 
-.first
+.role_segment
 {
-    background-color: hotpink;
-    height: 50px;
-    width: 50px;
-    margin-top: 5%;
-    margin-left: 40%;
+    background-color: yellow;
+    height: 10%;
+    min-height: 50px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.second
+.label_role
+{
+    float: left;
+    margin-left: 30%;
+    width: 30%;
+}
+
+.image_role
 {
     background-color: hotpink;
     height: 50px;
     width: 50px;
-    margin-top: 5%;
-    margin-left: 40%;
+    float: left;
 }
