@@ -68,8 +68,11 @@ body
 {
     background-color: green;
     float: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+    width: 50%;
+    height: 80%;
+    margin-top: 1%;
+    border-radius: 20px;
 }
 
 .role_segment
@@ -110,9 +113,11 @@ body
 
 .add_role_input
 {
-    width: 30%;
+    width: 40%;
     height: 100%;
     float: left;
+    margin: 1% 1% 1% 1%;
+    text-align: center;
 }
 
 .add_role_button
@@ -132,4 +137,17 @@ body
     margin-top: 25%;
     width: 90%;
     height: 70%;
+}
+
+.playerInserter
+{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.player_list
+{
+    background-color: darkred;
+    height: 40%;
+    margin: 25% 2% 2% 2%;
 }
