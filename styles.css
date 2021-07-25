@@ -106,7 +106,7 @@ body
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-    margin-top: 40%;
+    margin-top: 30%;
     float: left;
     width: 90%;
 }
@@ -128,7 +128,7 @@ body
     float: left;
 }
 
-.role_icons
+.role_icons_head
 {
     background-color: darkmagenta;
     float: left;
@@ -148,6 +148,30 @@ body
 .player_list
 {
     background-color: darkred;
-    height: 40%;
+    height: 60%;
     margin: 25% 2% 2% 2%;
+}
+
+.role_display_label
+{
+    text-align: center;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aqua;
+}
+
+.role_image_display
+{
+    background-color: fuchsia;
+
+}
+
+.player1
+{
+    width: 98%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: gray;
 }
