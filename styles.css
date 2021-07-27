@@ -88,8 +88,8 @@ body
 .label_role
 {
     float: left;
-    margin-left: 30%;
-    width: 30%;
+    margin-left: 5%;
+    width: 60%;
 }
 
 .image_role
@@ -118,6 +118,7 @@ body
     float: left;
     margin: 1% 1% 1% 1%;
     text-align: center;
+    resize: none;
 }
 
 .add_role_button
@@ -175,4 +176,17 @@ body
     margin-top: 1%;
     margin-left: 1%;
     background-color: gray;
+    float: left;
+}
+
+.image_role_center
+{
+    background-color: hotpink;
+    height: 30%;
+    min-height: 50px;
+    min-width: 50px;
+    width: 30%;
+    float: left;
+    margin: 1% 1% 1% 1%;
+    aspect-ratio: 1 / 1;
 }
