@@ -190,3 +190,9 @@ body
     margin: 1% 1% 1% 1%;
     aspect-ratio: 1 / 1;
 }
+
+.random_numbers
+{
+    float: left;
+    margin-left: 40%;
+}
