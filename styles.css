@@ -149,8 +149,8 @@ body
 .player_list
 {
     background-color: darkred;
-    height: 60%;
-    margin: 25% 2% 2% 2%;
+    height: 80%;
+    margin: 10% 2% 2% 2%;
 }
 
 .role_display_label
@@ -168,10 +168,10 @@ body
 
 }
 
-.player1
+.player
 {
     width: 98%;
-    height: 10%;
+    height: 8%;
     min-height: 50px;
     margin-top: 1%;
     margin-left: 1%;
