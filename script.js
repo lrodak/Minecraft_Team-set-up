@@ -17,3 +17,9 @@ function randomness(){
 
     document.getElementById("random_numbers").innerHTML = sum[0]+" "+sum[1]+" "+sum[2]+" "+sum[3]+" "+sum[4]+" "+sum[5]+" "+sum[6]+" "+sum[7]+" "+sum[8];
 }
+
+function playerList(){
+    // document.getElementById("player8").style.display = "none";
+    // document.getElementById("player9").style.display = "none";
+    document.getElementById("player10").style.display = "none";
+}
