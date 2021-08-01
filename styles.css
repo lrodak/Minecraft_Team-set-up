@@ -29,7 +29,7 @@ body
 
 .random
 {
-    background-color: blue;
+    background-color: rgb(73, 73, 85);;
     height: 95%;
     width: 32%;
     margin-left: 1%;
@@ -39,7 +39,7 @@ body
 
 .roles
 {
-    background-color: green;
+    background-color: rgb(73, 73, 85);;
     height: 95%;
     width: 32%;
     float:left;
