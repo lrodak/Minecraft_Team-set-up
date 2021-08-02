@@ -1,6 +1,6 @@
 function randomness(){ 
 
-    var players=4;
+    var players=5;
     var sum=[1,1,1,1];
     var sum2=[0,0,0,0]
     var roles=9;
