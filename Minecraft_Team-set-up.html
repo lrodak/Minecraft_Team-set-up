@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="addRoleScript.js"></script>
 </head>
 <body>
 
@@ -10,41 +11,41 @@
     <div class="players">
         <div class="playerInserter">
             <label id="playerInputHead">Wprowadź liczbę graczy:</label>
-            <input id="playerNumberInput" type="number" min="2" max="10"></input>
+            <input id="playerNumberInput" type="number" min="2" max="10">
             <button class="accept_players_button" onclick="playerList()">OK</button>
         </div>
         <label class="random_numbers" id="random_numbers"></label>
         <div class="player_list">
             <div class="player">
                 <div id="player1">player1:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player2">player2:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player3">player3:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player4">player4:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player5">player5:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player6">player6:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player7">player7:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player8">player8:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player9">player9:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
                 <div id="player10">player10:
-                    <input type="text"></input>
+                    <input type="text">
                 </div>
             </div> 
         </div>
@@ -90,62 +91,68 @@
         <div class="column">
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_axe.png" width="50px" height="50px"  alt="">
+                    <img src="images/minecraft_axe.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Woodcutter - a person who dont like trees</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_pickaxe.jpg" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_pickaxe.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Miner - you will rock them</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_netherrack.png" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_netherrack.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Netherman - otherworldly experience</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_dragonhead.png" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_dragonhead.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Dragonslayer - be a hero, get a princess</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_wheat.jpg" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_wheat.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Farmer - be efficient, have a plan to feed everyone you met</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_potion.jpg" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_potion.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Alchemic - add this and that</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_bricks.png" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_bricks.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Builder - make biggest dirt cave possible</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_chestplate.png" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_chestplate.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Blacksmith - make armor, make enchants and fuse</label>
             </div>
             <div class="role_segment">
                 <div class="image_role">
-                    <img src="images/minecraft_sword.png" width="50px" height="50px" alt="">
+                    <img src="images/minecraft_sword.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Warrior - you're going fighters, you kill zombies, skeletons and spiders</label>
             </div>
+            <div id="customRole" class="role_segment">
+                <div class="image_role">
+                    <img src="" width="50" height="50" alt="">
+                </div>
+                <label class="label_role">Custom</label>
+            </div>
         </div>
         <div class="add_role">
-            <textarea class="add_role_input"></textarea>
-            <button class="add_role_button">Add role</button>
+            <textarea id ="add_role_id" class="add_role_input"></textarea>
+            <button class="add_role_button" onclick="addRole()">Add role</button>
         </div>
     </div>
 </div>
