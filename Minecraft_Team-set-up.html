@@ -10,7 +10,7 @@
 <div class="page">
     <div class="players">
         <div class="playerInserter">
-            <label id="playerInputHead">Wprowadź liczbę graczy:</label>
+            <label id="playerInputHead">Enter player count:</label>
             <input id="playerNumberInput" type="number" min="2" max="10">
             <button class="accept_players_button" onclick="playerList()">OK</button>
         </div>
@@ -52,10 +52,10 @@
     </div>
     <div class="random">
         <div class="start_button_head">
-            <button type="button" class="start_button" onclick="randomness()" >START</button>
+            <button type="button" class="start_button" onclick="randomness()" >Let the jurney begin</button>
         </div>
         <div class="role_icons_head">
-            <label class="role_display_label">Role dostępne do wylosowania:</label>
+            <label class="role_display_label">Current role pool:</label>
             <div class="role_image_display"> 
                 <div class="image_role_center">
                     <img src="images/minecraft_axe.png" width="100%" height="100%"  alt="">
@@ -144,10 +144,9 @@
                 <label class="label_role">Warrior - you're going fighters, you kill zombies, skeletons and spiders</label>
             </div>
             <div id="customRole" class="role_segment">
-                <div class="image_role">
-                    <img src="" width="50" height="50" alt="">
+                <div id="customRoleText" class="image_role"><b> | ? |</b>
                 </div>
-                <label class="label_role">Custom</label>
+                <label id="customRoleLabel" class="label_role">Custom</label>
             </div>
         </div>
         <div class="add_role">

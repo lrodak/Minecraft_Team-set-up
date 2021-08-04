@@ -98,7 +98,9 @@ body
     height: 50px;
     width: 50px;
     float: left;
+    font-size: 34px;
 }
+
 
 .image_role:hover
 {

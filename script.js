@@ -4,7 +4,7 @@ function randomness(){
     var sum=[1,1,1,1];
     var sum2=[0,0,0,0]
     var roles=9;
-    var max_roles = roles/players;
+    var max_roles = Math.floor(roles/players);
 
     for(var i=0; i<roles ; i++){
         var random = Math.floor(Math.random() * players);
