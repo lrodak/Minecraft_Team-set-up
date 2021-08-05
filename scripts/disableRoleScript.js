@@ -1,6 +1,19 @@
-function disableRole(){
+function disableRole(parentinput){
  
- //this.parentNode.style.background='red';
- this.parentNode.style.display = "none";
- alert("ser");
+ var parentTMPColorHolder = parentinput.style.background;
+
+ switch(parentTMPColorHolder)
+    {
+        case 'red none repeat scroll 0% 0%':
+            parentTMPColorHolder='green';        
+            break;
+        case 'green none repeat scroll 0% 0%':
+            parentTMPColorHolder='red';
+            break;
+        default:
+            parentTMPColorHolder = 'green';
+            break;
+    }
+
+ parentinput.style.background = parentTMPColorHolder;
 }
