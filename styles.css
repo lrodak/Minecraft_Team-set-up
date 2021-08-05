@@ -173,7 +173,8 @@ body
 .role_image_display
 {
     background-color: fuchsia;
-
+    margin-left: 4%;
+    margin-top: 3%;
 }
 
 .player
@@ -205,6 +206,12 @@ body
 }
 
 .random_numbers
+{
+    float: left;
+    margin-left: 40%;
+}
+
+.random_numbers2
 {
     float: left;
     margin-left: 40%;
