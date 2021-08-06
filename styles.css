@@ -215,13 +215,13 @@ body
     background-color: violet;
 }
 
-.random_numbers
+.random_roles
 {
     float: left;
     margin-left: 40%;
 }
 
-.random_numbers2
+.roles_per_player
 {
     float: left;
     margin-left: 40%;
@@ -230,4 +230,35 @@ body
 #customRole
 {
     display: none;
+}
+
+.random_role_list
+{
+    background-color: aqua;
+    /* margin-left: 1%; */
+    width: 48%;
+    float: left;
+    height: 95%;
+}
+
+.player1_name
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 30%;
+    float: left;
+    height: 45px;
+}
+
+#player1
+{
+    /* background-color: green; */
+}
+
+.player1_number
+{
+    background-color: grey;
+    width: 15%;
+    float: left;
+    height: 40px;
 }

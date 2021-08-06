@@ -1,36 +1,30 @@
 function randomness(){ 
 
-    var players= document.getElementById("playerNumberInput").value;
-    var sum=[1,1,1,1];
-    var sum2=[0,0,0,0,0,0,0,0,0,0];
+    var number_of_players= document.getElementById("playerNumberInput").value;
+    var role_list=[];
+    var rolesPerPlayer=[0,0,0,0,0,0,0,0,0,0];
     var roles=9;
-    var max_roles = Math.floor(roles/players);
-    var extra_Roles = roles%players;
+    var max_roles = Math.floor(roles/number_of_players);
+    var extra_Roles = roles%number_of_players;
 
-    // if(roles%players!==0){
-    //     max_roles++;
-    // }
-
-    alert("players: "+players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles);
+    // alert("players: "+number_of_players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles);
 
     for(var i=0; i<roles ; i++){
 
-        var random = Math.floor(Math.random() * players);
-        sum[i]=random+1;
+        var random_role = Math.floor(Math.random() * number_of_players);
+        role_list[i]=random_role+1;
 
-        if(sum2[random]>=max_roles){
-            
-            if(extra_Roles>0 && sum2[random]!==max_roles+1){
-                sum2[random]++;
+        if(rolesPerPlayer[random_role]>=max_roles){
+            if(extra_Roles>0 && rolesPerPlayer[random_role]!==max_roles+1){
+                rolesPerPlayer[random_role]++;
                 extra_Roles--
             }
             else i--;
-
         } else {
-            sum2[random]++;
+            rolesPerPlayer[random_role]++;
         }
     }
 
-    document.getElementById("random_numbers").innerHTML = sum[0]+" "+sum[1]+" "+sum[2]+" "+sum[3]+" "+sum[4]+" "+sum[5]+" "+sum[6]+" "+sum[7]+" "+sum[8];
-    document.getElementById("random_numbers2").innerHTML = sum2[0]+" "+sum2[1]+" "+sum2[2]+" "+sum2[3]+" "+sum2[4]+" "+sum2[5]+" "+sum2[6]+" "+sum2[7]+" "+sum2[8];
+    document.getElementById("random_roles").innerHTML = role_list[0]+" "+role_list[1]+" "+role_list[2]+" "+role_list[3]+" "+role_list[4]+" "+role_list[5]+" "+role_list[6]+" "+role_list[7]+" "+role_list[8];
+    document.getElementById("roles_per_player").innerHTML = rolesPerPlayer[0]+" "+rolesPerPlayer[1]+" "+rolesPerPlayer[2]+" "+rolesPerPlayer[3]+" "+rolesPerPlayer[4]+" "+rolesPerPlayer[5]+" "+rolesPerPlayer[6]+" "+rolesPerPlayer[7]+" "+rolesPerPlayer[8];
 }
