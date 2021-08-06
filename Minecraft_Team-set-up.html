@@ -5,6 +5,7 @@
     <script src="script.js"></script>
     <script src="scripts/addRoleScript.js"></script>
     <script src="scripts/disableRoleScript.js"></script>
+    <script src="scripts/deleteRoleScript.js"></script>
     <script src="scripts/randomRole.js"></script>
     <script src="scripts/showPlayerList.js"></script>
 </head>
@@ -100,75 +101,81 @@
     </div>
     <div class="roles">
         <div class="column">
-            <div class="role_segment">
-                <div class="image_role">
-                    <img src="images/minecraft_axe.png" width="50" height="50" alt="">
+            <div class="role_segment"> 
+                <div class="image_role" onclick="disableRole(this.parentNode)">
+                    <img src="images/minecraft_axe.png" width="50" height="50" alt="" >
                 </div>
                 <label class="label_role">Woodcutter - a person who dont like trees</label>
-                    <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                    <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
                 
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_pickaxe.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Miner - you will rock them</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_netherrack.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Netherman - otherworldly experience</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_dragonhead.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Dragonslayer - be a hero, get a princess</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_wheat.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Farmer - be efficient, have a plan to feed everyone you met</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_potion.jpg" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Alchemic - add this and that</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_bricks.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Builder - make biggest dirt cave possible</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_chestplate.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Blacksmith - make armor, make enchants and fuse</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
-                <div class="image_role">
+                <div class="image_role" onclick="disableRole(this.parentNode)">
                     <img src="images/minecraft_sword.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Warrior - you're going fighters, you kill zombies, skeletons and spiders</label>
-                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div id="customRole" class="role_segment">
-                <div id="customRoleText" class="image_role"><b> | ? |</b>
+                <div id="customRoleText" class="image_role" onclick="disableRole(this.parentNode)"><b> | ? |</b> 
                 </div>
                 <label id="customRoleLabel" class="label_role">Custom</label>
-                  <img src="images/X_button.png" width="50" height="50" alt=""  align="right" onclick="disableRole(this.parentNode)">
+                  <img src="images/X_button.png" width="50" height="50" alt=""  align="right" onclick="deleteRole(this.parentNode)">
+            </div>
+            <div id="customRole2" class="role_segment">
+                <div id="customRole2Text" class="image_role" onclick="disableRole(this.parentNode)"><b> | ? |</b>
+                </div>
+                <label id="customRole2Label" class="label_role">Custom2</label>
+                  <img src="images/X_button.png" width="50" height="50" alt=""  align="right" onclick="deleteRole(this.parentNode)">
             </div>
         </div>
         <div class="add_role">
