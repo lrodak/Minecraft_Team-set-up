@@ -28,14 +28,3 @@ function playerList(){
         document.getElementById("player10").style.display = "none";
     }
 }
-
-function showPlayerList(){
-    document.getElementById("player3").style.display = "block";
-    document.getElementById("player4").style.display = "block";
-    document.getElementById("player5").style.display = "block";
-    document.getElementById("player6").style.display = "block";
-    document.getElementById("player7").style.display = "block";
-    document.getElementById("player8").style.display = "block";
-    document.getElementById("player9").style.display = "block";
-    document.getElementById("player10").style.display = "block";
-}

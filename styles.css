@@ -177,7 +177,7 @@ body
     margin-top: 3%;
 }
 
-.player
+#player1, #player2, #player3, #player4, #player5, #player6, #player7, #player8, #player9, #player10 
 {
     width: 98%;
     height: 8%;
@@ -186,6 +186,16 @@ body
     margin-left: 1%;
     background-color: gray;
     float: left;
+}
+
+#player3, #player4, #player5, #player6, #player7, #player8, #player9, #player10 
+{
+    display: none;
+}
+
+#player1:hover, #player2:hover, #player3:hover, #player4:hover, #player5:hover, #player6:hover, #player7:hover, #player8:hover, #player9:hover, #player10:hover
+{
+    background-color: azure;
 }
 
 .image_role_center
