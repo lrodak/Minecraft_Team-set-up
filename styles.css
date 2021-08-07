@@ -254,15 +254,15 @@ body
     height: 45px;
 }
 
-#player1
-{
-    /* background-color: green; */
-}
-
 .player1_number
 {
     background-color: grey;
     width: 15%;
     float: left;
     height: 40px;
+}
+
+.inserterSettings
+{
+    margin-left: 5%;
 }

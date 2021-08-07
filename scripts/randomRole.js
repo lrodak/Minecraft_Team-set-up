@@ -6,21 +6,26 @@ function randomness(){
     var roles=9;
     var max_roles = Math.floor(roles/number_of_players);
     var extra_Roles = roles%number_of_players;
+    var equalDistribution = document.getElementById("equalDistributionInput").checked;
 
-    // alert("players: "+number_of_players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles);
-
+    alert("players: "+number_of_players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles+" equal_distribution: "+equalDistribution);
+    
     for(var i=0; i<roles ; i++){
 
         var random_role = Math.floor(Math.random() * number_of_players);
         role_list[i]=random_role+1;
 
-        if(rolesPerPlayer[random_role]>=max_roles){
-            if(extra_Roles>0 && rolesPerPlayer[random_role]!==max_roles+1){
+        if(equalDistribution){
+            if(rolesPerPlayer[random_role]>=max_roles){
+                if(extra_Roles>0 && rolesPerPlayer[random_role]!==max_roles+1){
+                    rolesPerPlayer[random_role]++;
+                    extra_Roles--
+                }
+                else i--;
+            } else {
                 rolesPerPlayer[random_role]++;
-                extra_Roles--
             }
-            else i--;
-        } else {
+        }else{
             rolesPerPlayer[random_role]++;
         }
     }
