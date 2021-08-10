@@ -1,23 +1,23 @@
 function disableRole(parentinput){
  
  var parentTMPColorHolder = parentinput.style.background;
-
+   // alert(parentTMPColorHolder);
     switch(parentTMPColorHolder)
     {
-        case 'red none repeat scroll 0% 0%':
-            parentTMPColorHolder='green';        
+        case 'FireBrick none repeat scroll 0% 0%':
+            parentTMPColorHolder='DarkOliveGreen';        
             break;
-        case 'green none repeat scroll 0% 0%':
-            parentTMPColorHolder='red';
+        case 'darkolivegreen none repeat scroll 0% 0%':
+            parentTMPColorHolder='FireBrick';
             break;
-        case 'red':
-            parentTMPColorHolder='green';        
+        case 'FireBrick':
+            parentTMPColorHolder='DarkOliveGreen';     
             break;
-        case 'green':
-            parentTMPColorHolder='red';
+        case 'DarkOliveGreen':
+            parentTMPColorHolder='FireBrick';
             break;
         default:
-            parentTMPColorHolder = 'green';
+            parentTMPColorHolder = 'DarkOliveGreen';
             break;
     }
 
