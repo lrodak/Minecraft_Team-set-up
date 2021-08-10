@@ -67,4 +67,78 @@ function randomness(){
         default:
             document.getElementById("roles_per_player").innerHTML = rolesPerPlayer[0]+" "+rolesPerPlayer[1]+" "+rolesPerPlayer[2]+" "+rolesPerPlayer[3]+" "+rolesPerPlayer[4]+" "+rolesPerPlayer[5]+" "+rolesPerPlayer[6]+" "+rolesPerPlayer[7]+" "+rolesPerPlayer[8];
     }
+
+    document.getElementById("player1_role1").style.display = 'none';
+    document.getElementById("player1_role2").style.display = 'none';
+    document.getElementById("player1_role3").style.display = 'none';
+    document.getElementById("player1_role4").style.display = 'none';
+    document.getElementById("player1_role5").style.display = 'none';
+    document.getElementById("player2_role1").style.display = 'none';
+    document.getElementById("player2_role2").style.display = 'none';
+    document.getElementById("player2_role3").style.display = 'none';
+    document.getElementById("player2_role4").style.display = 'none';
+    document.getElementById("player2_role5").style.display = 'none';
+
+    var player1_displayed_roles=1;
+    var player2_displayed_roles=1;
+    for(var i=0; i<roles; i++){
+        if(role_list[i]==1){
+            switch(player1_displayed_roles){
+            case 1:    
+                document.getElementById("player1_role1").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role1").style.display = 'inline';
+                player1_displayed_roles++;
+                break;
+            case 2:
+                document.getElementById("player1_role2").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role2").style.display = 'inline';
+                player1_displayed_roles++;
+                break;
+            case 3:
+                document.getElementById("player1_role3").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role3").style.display = 'inline';
+                player1_displayed_roles++;
+                break;
+            case 4:
+                document.getElementById("player1_role4").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role4").style.display = 'inline';
+                player1_displayed_roles++;
+                break;
+            case 5:
+                document.getElementById("player1_role5").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role5").style.display = 'inline';
+                player1_displayed_roles++;
+                break;
+            }
+        }
+        if(role_list[i]==2){
+            switch(player2_displayed_roles){
+            case 1:    
+                document.getElementById("player2_role1").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role1").style.display = 'inline';
+                player2_displayed_roles++;
+                break;
+            case 2:
+                document.getElementById("player2_role2").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role2").style.display = 'inline';
+                player2_displayed_roles++;
+                break;
+            case 3:
+                document.getElementById("player2_role3").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role3").style.display = 'inline';
+                player2_displayed_roles++;
+                break;
+            case 4:
+                document.getElementById("player2_role4").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role4").style.display = 'inline';
+                player2_displayed_roles++;
+                break;
+            case 5:
+                document.getElementById("player2_role5").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role5").style.display = 'inline';
+                player2_displayed_roles++;
+                break;
+            }
+        }
+    }
 }
