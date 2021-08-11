@@ -73,39 +73,50 @@ function randomness(){
     document.getElementById("player1_role3").style.display = 'none';
     document.getElementById("player1_role4").style.display = 'none';
     document.getElementById("player1_role5").style.display = 'none';
+
     document.getElementById("player2_role1").style.display = 'none';
     document.getElementById("player2_role2").style.display = 'none';
     document.getElementById("player2_role3").style.display = 'none';
     document.getElementById("player2_role4").style.display = 'none';
     document.getElementById("player2_role5").style.display = 'none';
 
+    document.getElementById("player3_role1").style.display = 'none';
+    document.getElementById("player3_role2").style.display = 'none';
+    document.getElementById("player3_role3").style.display = 'none';
+    document.getElementById("player3_role4").style.display = 'none';
+    document.getElementById("player3_role5").style.display = 'none';
+
+    var src=["images/minecraft_axe.png","images/minecraft_pickaxe.jpg","images/minecraft_netherrack.png","images/minecraft_dragonhead.png","images/minecraft_wheat.jpg","images/minecraft_potion.jpg","images/minecraft_bricks.png","images/minecraft_chestplate.png","images/minecraft_sword.png"]
+
     var player1_displayed_roles=1;
     var player2_displayed_roles=1;
-    for(var i=0; i<roles; i++){
+    var player3_displayed_roles=1;
+
+    for(var i=0; i<=roles; i++){
         if(role_list[i]==1){
             switch(player1_displayed_roles){
             case 1:    
-                document.getElementById("player1_role1").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role1").src = src[i];
                 document.getElementById("player1_role1").style.display = 'inline';
                 player1_displayed_roles++;
                 break;
             case 2:
-                document.getElementById("player1_role2").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role2").src = src[i];
                 document.getElementById("player1_role2").style.display = 'inline';
                 player1_displayed_roles++;
                 break;
             case 3:
-                document.getElementById("player1_role3").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role3").src = src[i];
                 document.getElementById("player1_role3").style.display = 'inline';
                 player1_displayed_roles++;
                 break;
             case 4:
-                document.getElementById("player1_role4").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role4").src = src[i];
                 document.getElementById("player1_role4").style.display = 'inline';
                 player1_displayed_roles++;
                 break;
             case 5:
-                document.getElementById("player1_role5").src = 'images/minecraft_axe.png';
+                document.getElementById("player1_role5").src = src[i];
                 document.getElementById("player1_role5").style.display = 'inline';
                 player1_displayed_roles++;
                 break;
@@ -114,29 +125,58 @@ function randomness(){
         if(role_list[i]==2){
             switch(player2_displayed_roles){
             case 1:    
-                document.getElementById("player2_role1").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role1").src = src[i];
                 document.getElementById("player2_role1").style.display = 'inline';
                 player2_displayed_roles++;
                 break;
             case 2:
-                document.getElementById("player2_role2").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role2").src = src[i];
                 document.getElementById("player2_role2").style.display = 'inline';
                 player2_displayed_roles++;
                 break;
             case 3:
-                document.getElementById("player2_role3").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role3").src = src[i];
                 document.getElementById("player2_role3").style.display = 'inline';
                 player2_displayed_roles++;
                 break;
             case 4:
-                document.getElementById("player2_role4").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role4").src = src[i];
                 document.getElementById("player2_role4").style.display = 'inline';
                 player2_displayed_roles++;
                 break;
             case 5:
-                document.getElementById("player2_role5").src = 'images/minecraft_axe.png';
+                document.getElementById("player2_role5").src = src[i];
                 document.getElementById("player2_role5").style.display = 'inline';
                 player2_displayed_roles++;
+                break;
+            }
+        }
+        if(role_list[i]==3){
+            switch(player3_displayed_roles){
+            case 1:    
+                document.getElementById("player3_role1").src = src[i];
+                document.getElementById("player3_role1").style.display = 'inline';
+                player3_displayed_roles++;
+                break;
+            case 2:
+                document.getElementById("player3_role2").src = src[i];
+                document.getElementById("player3_role2").style.display = 'inline';
+                player3_displayed_roles++;
+                break;
+            case 3:
+                document.getElementById("player3_role3").src = src[i];
+                document.getElementById("player3_role3").style.display = 'inline';
+                player3_displayed_roles++;
+                break;
+            case 4:
+                document.getElementById("player3_role4").src = src[i];
+                document.getElementById("player3_role4").style.display = 'inline';
+                player3_displayed_roles++;
+                break;
+            case 5:
+                document.getElementById("player3_role5").src = src[i];
+                document.getElementById("player3_role5").style.display = 'inline';
+                player3_displayed_roles++;
                 break;
             }
         }

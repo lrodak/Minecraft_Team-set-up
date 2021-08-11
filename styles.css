@@ -281,3 +281,8 @@ body
 {
     display: none;
 }
+
+#player3_role1, #player3_role2, #player3_role3, #player3_role4, #player3_role5
+{
+    display: none;
+}
