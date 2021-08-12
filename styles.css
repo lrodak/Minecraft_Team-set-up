@@ -272,17 +272,7 @@ body
     margin-left: 5%;
 }
 
-#player1_role1, #player1_role2, #player1_role3, #player1_role4, #player1_role5
-{
-    display: none;
-}
-
-#player2_role1, #player2_role2, #player2_role3, #player2_role4, #player2_role5
-{
-    display: none;
-}
-
-#player3_role1, #player3_role2, #player3_role3, #player3_role4, #player3_role5
+.random_role_list > img
 {
     display: none;
 }
