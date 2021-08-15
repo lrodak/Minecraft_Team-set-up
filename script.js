@@ -28,3 +28,7 @@ function playerList(){
         document.getElementById("player10").style.display = "none";
     }
 }
+
+function loadPage(){
+    document.getElementById("playerNumberInput").value = "2";
+}

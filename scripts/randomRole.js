@@ -3,41 +3,40 @@ function randomness(){
     var number_of_players= document.getElementById("playerNumberInput").value;
     var role_list=[];
     var rolesPerPlayer=[0,0,0,0,0,0,0,0,0,0];
-    var roles=9;
+    var roles=coutRoles();
     var max_roles = Math.floor(roles/number_of_players);
     var extra_Roles = roles%number_of_players;
     var equalDistribution = document.getElementById("equalDistributionInput").checked;
     var playersTMP=0;
 
     // alert("players: "+number_of_players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles+" equal_distribution: "+equalDistribution);
-    
-    for(var i=0; i<roles ; i++){
 
-        var random_role = Math.floor(Math.random() * number_of_players);
-        role_list[i]=random_role+1;
+    if(number_of_players<=roles){
+        for(var i=0; i<roles ; i++){
 
-        if(equalDistribution){
-            if(rolesPerPlayer[random_role]>=max_roles){
-                if(extra_Roles>0 && rolesPerPlayer[random_role]!==max_roles+1){
-                    rolesPerPlayer[random_role]++;
-                    extra_Roles--
-                }
-                else i--;
-            } else {
+            var random_role = Math.floor(Math.random() * number_of_players);
+            role_list[i]=random_role+1;
+
+            if(equalDistribution){
+                if(rolesPerPlayer[random_role]>=max_roles){
+                    if(extra_Roles>0 && rolesPerPlayer[random_role]!==max_roles+1){
+                        rolesPerPlayer[random_role]++;
+                        extra_Roles--
+                    }
+                    else i--;
+                } else rolesPerPlayer[random_role]++;
+            }else if(rolesPerPlayer[random_role]<1){
                 rolesPerPlayer[random_role]++;
-            }
-        }else if(rolesPerPlayer[random_role]<1){
-            rolesPerPlayer[random_role]++;
-            playersTMP++;
-        }else if(playersTMP>=number_of_players){
-            rolesPerPlayer[random_role]++;
-        }else i--;
+                playersTMP++;
+            }else if(playersTMP>=number_of_players && rolesPerPlayer[random_role]<5){
+                rolesPerPlayer[random_role]++;
+            }else i--;
+        }
     }
 
     // document.getElementById("random_roles").innerHTML = role_list[0]+" "+role_list[1]+" "+role_list[2]+" "+role_list[3]+" "+role_list[4]+" "+role_list[5]+" "+role_list[6]+" "+role_list[7]+" "+role_list[8];
     // document.getElementById("roles_per_player").innerHTML = rolesPerPlayer[0]+" "+rolesPerPlayer[1]+" "+rolesPerPlayer[2]+" "+rolesPerPlayer[3]+" "+rolesPerPlayer[4]+" "+rolesPerPlayer[5]+" "+rolesPerPlayer[6]+" "+rolesPerPlayer[7]+" "+rolesPerPlayer[8];
     var src = createRoleIconsTable();
-    var src2=["images/minecraft_axe.png","images/minecraft_pickaxe.jpg","images/minecraft_netherrack.png","images/minecraft_dragonhead.png","images/minecraft_wheat.jpg","images/minecraft_potion.jpg","images/minecraft_bricks.png","images/minecraft_chestplate.png","images/minecraft_sword.png"]
 
     var displayed_roles = [0,0,0,0,0,0,0,0,0,0];
     var all_players_id_images=["player1_role1","player1_role2","player1_role3","player1_role4","player1_role5",
@@ -56,4 +55,15 @@ function randomness(){
         document.getElementById(all_players_id_images[displayed_roles[role_list[i]]+((role_list[i]-1)*5)]).style.display = 'inline';
         displayed_roles[role_list[i]]++;
     }
+}
+
+function coutRoles(){
+    var role_segment = document.getElementsByClassName('role_segment');
+    var roles_cout = 0;
+    for(var i = 0; i < role_segment.length-2; i++) {
+        if(role_segment[i].style.display !== "none"){
+            roles_cout++;
+        }
+    }
+    return roles_cout;
 }

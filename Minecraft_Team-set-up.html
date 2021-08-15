@@ -10,8 +10,8 @@
     <script src="scripts/showPlayerList.js"></script>
     <script src="scripts/createRoleIconsTable.js"></script>
 </head>
-<body onload="">
-
+<body onload="loadPage()">
+<label class="page_name_head">Minecraft Team set-up</label>
 <div class="page">
     <div class="players">
         <div class="playerInserter">
@@ -159,10 +159,10 @@
                     <img src="images/minecraft_dragonhead.png" width="100%" height="100%" alt="">
                 </div>
                 <div class="image_role_center">
-                    <img src="images/minecraft_wheat.jpg" width="100%" height="100%" alt="">
+                    <img src="images/minecraft_wheat.png" width="100%" height="100%" alt="">
                 </div>
                 <div class="image_role_center">
-                    <img src="images/minecraft_potion.jpg" width="100%" height="100%" alt="">
+                    <img src="images/minecraft_potion.png" width="100%" height="100%" alt="">
                 </div>
                 <div class="image_role_center">
                     <img src="images/minecraft_bricks.png" width="100%" height="100%" alt="">
@@ -209,14 +209,14 @@
             </div>
             <div class="role_segment">
                 <div class="image_role" onclick="disableRole(this.parentNode)">
-                    <img class="image_role_src" src="images/minecraft_wheat.jpg" width="50" height="50" alt="">
+                    <img class="image_role_src" src="images/minecraft_wheat.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Farmer - be efficient, have a plan to feed everyone you met</label>
                   <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
             </div>
             <div class="role_segment">
                 <div class="image_role" onclick="disableRole(this.parentNode)">
-                    <img class="image_role_src" src="images/minecraft_potion.jpg" width="50" height="50" alt="">
+                    <img class="image_role_src" src="images/minecraft_potion.png" width="50" height="50" alt="">
                 </div>
                 <label class="label_role">Alchemic - add this and that</label>
                   <img src="images/X_button.png" width="50" height="50" alt="" align="right" onclick="deleteRole(this.parentNode)">
