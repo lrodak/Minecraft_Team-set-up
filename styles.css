@@ -1,12 +1,12 @@
 body
 {
-    background-color: lightgrey;
+    background-color: #2D2D34;
     display: grid;
 }
 
 .page
 {
-    background-color: #4A5859;
+    background-color: #E0CA3C;
     font-size: larger;
     height: 90%;
     width: 90%;
@@ -18,7 +18,7 @@ body
 
 .players
 {
-    background-color: rgb(73, 73, 85);
+    background-color: #136F63;
     height: 95%;
     width: 32%;
     float:left;
@@ -28,7 +28,7 @@ body
 
 .random
 {
-    background-color: rgb(73, 73, 85);
+    background-color: #136F63;
     height: 95%;
     width: 32%;
     margin-left: 1%;
@@ -38,7 +38,7 @@ body
 
 .roles
 {
-    background-color: rgb(73, 73, 85);
+    background-color: #136F63;
     height: 95%;
     width: 32%;
     float:left;
@@ -49,7 +49,7 @@ body
 #playerInputHead
 {
     background-color: darkkhaki;
-    font-size: larger;
+    font-size: 25px;
     margin-left: 1%;
     margin-top: 1%;
     font-family: monospace;
@@ -59,19 +59,20 @@ body
 .start_button_head
 {
     width: 100%;
-    height: 50px;
-    /* background-color: green; */
+    height: 70px;
+    display: grid;
 }
 
 .start_button
 {
     background-color: red;
-    float: left;
-    margin-left: 30%;
-    width: 50%;
-    height: 90%;
+    margin: auto;
+    width: 60%;
+    height: 100%;
     margin-top: 1%;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center; 
 }
 
 .role_segment
@@ -93,7 +94,7 @@ body
 
 .image_role
 {
-    background-color: white;
+    background-color: #A7A5C6;
     height: 50px;
     width: 50px;
     float: left;
@@ -103,7 +104,7 @@ body
 
 .image_role:hover
 {
-    background-color: violet;
+    background-color: #8797B2;
 }
 
 .add_role
@@ -137,24 +138,27 @@ body
 
 .role_icons_head
 {
-    background-color: darkmagenta;
+    background-color: #E0CA3C;
     float: left;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 25%;
+    margin-top: 20%;
     width: 90%;
     height: 70%;
 }
 
 .playerInserter
 {
-    margin-left: 5%;
-    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
 }
 
 .player_list
 {
-    background-color: darkred;
+    background-color: #E0CA3C;
     height: 80%;
     margin: 10% 2% 2% 2%;
 }
@@ -176,7 +180,7 @@ body
     margin-top: 3%;
 }
 
-#player1, #player2, #player3, #player4, #player5, #player6, #player7, #player8, #player9, #player10 
+.player
 {
     width: 98%;
     height: 8%;
@@ -184,7 +188,7 @@ body
     max-height: 50px;
     margin-top: 1%;
     margin-left: 1%;
-    background-color: gray;
+    background-color: #A7A5C6;
     float: left;
 }
 
@@ -193,14 +197,14 @@ body
     display: none;
 }
 
-#player1:hover, #player2:hover, #player3:hover, #player4:hover, #player5:hover, #player6:hover, #player7:hover, #player8:hover, #player9:hover, #player10:hover
+.player:hover
 {
-    background-color: azure;
+    background-color: #8797B2;
 }
 
 .image_role_center
 {
-    background-color: white;
+    background-color: #A7A5C6;
     height: 30%;
     min-height: 50px;
     min-width: 50px;
@@ -212,7 +216,7 @@ body
 
 .image_role_center:hover
 {
-    background-color: violet;
+    background-color: #8797B2;
 }
 
 .random_roles
@@ -238,7 +242,6 @@ body
 
 .random_role_list
 {
-    /* background-color: aqua; */
     margin-left: 1%;
     width: auto;
     float: left;
@@ -246,19 +249,20 @@ body
     min-height: 50px;
 }
 
-.player1_name, .player2_name, .player3_name, .player4_name, .player5_name, .player6_name, .player7_name, .player8_name, .player9_name, .player10_name
+.player_name
 {
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 1%;
     width: 25%;
     float: left;
     min-height: 24px;
-    height: 90%;
+    height: 60%;
+    background-color: beige;
+    text-align: center;
 }
 
-.player1_number, .player2_number, .player3_number, .player4_number, .player5_number, .player6_number, .player7_number, .player8_number, .player9_number, .player10_number
+.player_number
 {
-    /* background-color: grey; */
     margin-top: 2%;
     width: 15%;
     float: left;
@@ -268,7 +272,7 @@ body
 
 .inserterSettings
 {
-    margin-left: 5%;
+    margin: auto;
 }
 
 .random_role_list > img
@@ -282,4 +286,27 @@ body
     text-align: center;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: beige;
+}
+
+.inserter
+{
+    display: grid;
+}
+
+#playerNumberInput
+{
+    height: 90%;
+    text-align: center;
+    background-color: bisque;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.accept_players_button
+{
+    background-color: red;
+    border-radius: 20px;
+    min-height: 40px;
+    min-width: 40px;
 }
