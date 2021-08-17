@@ -11,7 +11,9 @@ function randomness(){
 
     // alert("players: "+number_of_players+" max_roles: "+max_roles+" extra_roles: "+extra_Roles+" equal_distribution: "+equalDistribution);
 
-    if(number_of_players<=roles){
+    playerList();
+    
+    if(number_of_players<=roles && number_of_players*5>=roles){
         for(var i=0; i<roles ; i++){
 
             var random_role = Math.floor(Math.random() * number_of_players);
@@ -32,6 +34,11 @@ function randomness(){
                 rolesPerPlayer[random_role]++;
             }else i--;
         }
+    }
+    if(number_of_players>roles){
+        alert("Too many players!");
+    } else if(number_of_players*5<roles){
+        alert("Too many roles!");
     }
 
     // document.getElementById("random_roles").innerHTML = role_list[0]+" "+role_list[1]+" "+role_list[2]+" "+role_list[3]+" "+role_list[4]+" "+role_list[5]+" "+role_list[6]+" "+role_list[7]+" "+role_list[8];
@@ -60,7 +67,7 @@ function randomness(){
 function coutRoles(){
     var role_segment = document.getElementsByClassName('role_segment');
     var roles_cout = 0;
-    for(var i = 0; i < role_segment.length-2; i++) {
+    for(var i = 0; i < role_segment.length; i++) {
         if(role_segment[i].style.display !== "none"){
             roles_cout++;
         }

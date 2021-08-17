@@ -31,4 +31,6 @@ function playerList(){
 
 function loadPage(){
     document.getElementById("playerNumberInput").value = "2";
+    document.getElementById("customRole").style.display = "none";
+    document.getElementById("customRole2").style.display = "none";
 }
