@@ -159,8 +159,8 @@ body
 .player_list
 {
     background-color: #E0CA3C;
-    height: 80%;
-    margin: 10% 2% 2% 2%;
+    height: 73%;
+    margin: 15% 2% 2% 2%;
 }
 
 .role_display_label
@@ -301,6 +301,7 @@ body
     background-color: bisque;
     font-size: 15px;
     font-weight: 600;
+    width: 10%;
 }
 
 .accept_players_button
